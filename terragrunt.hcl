@@ -4,6 +4,9 @@
 # Note the extra `/` after the protocol is required for the shorthand
 # notation.
 # tfr://REGISTRY_DOMAIN/MODULE?version=VERSION
+# https://991462996773.signin.aws.amazon.com/console?region=us-east-1om/console?region=us-east-1
+# cloud_user
+# #2Rrwigpuf
 terraform {
   source = "tfr:///terraform-aws-modules/vpc/aws?version=3.5.0"
 }
@@ -15,8 +18,8 @@ generate "provider" {
   contents = <<EOF
 provider "aws" {
   region = "us-east-1"
-  access_key = ""
-  secret_key = ""
+  access_key = "AKIA6E7LADUKBDAQDBA4"
+  secret_key = "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"
 }
 EOF
 }
@@ -35,6 +38,6 @@ inputs = {
 
   tags = {
     Terraform = "true"
-    Environment = "dev"
+    Environment = "prod"
   }
 }
