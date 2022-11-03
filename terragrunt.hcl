@@ -3,7 +3,6 @@
 # "tfr://registry.terraform.io/terraform-aws-modules/vpc/aws?version=3.5.0".
 # Note the extra `/` after the protocol is required for the shorthand
 # notation.
-# tfr://REGISTRY_DOMAIN/MODULE?version=VERSION
 terraform {
   source = "tfr:///terraform-aws-modules/vpc/aws?version=3.5.0"
 }
